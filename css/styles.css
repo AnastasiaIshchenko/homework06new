@@ -54,10 +54,7 @@ body {
 .menu {
     display: none;
 }
-.page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
+
 .address {
     display: none;
 }
@@ -369,7 +366,7 @@ body {
 /*=======FOOTER MOBILE STYLES======*/
 .footer {
     background-color: #2E2F42;
-    height:664px;
+    padding: 96px 0;
 }
 .container-footer {
     padding-left: 16px;
@@ -377,9 +374,9 @@ body {
     display: flex;
     flex-direction: column;
 }
-.container-footer-item {
+/* .container-footer-item {
     margin:auto;
-}
+} */
 .logo-span-footer {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -398,7 +395,6 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-top: 97.5px;
     display: inline-flex;
     margin-bottom: 16px;
     justify-items: center;
@@ -501,6 +497,7 @@ body {
 }
 
 .subscribe-para {
+    margin-top: 0;
     margin-bottom: 16px;
     font-size: 16px;
     font-weight: 500;
@@ -771,14 +768,17 @@ body {
     
         .mobile-menu-close-btn {
             position: absolute;
-            border: none;
+            border: 1px solid rgba(0, 0, 0, 0.1);;
             background-color: transparent;
             padding: 0;
             line-height: 0;
             right: 8px;
             top: 24px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
         }
-
+                
         .menu-link-mobile {
             font-family: 'Roboto', sans-serif;
             font-size: 36px;
@@ -860,6 +860,7 @@ body {
 @media screen and (min-width:768px) {
     .container {
         max-width: 768px;
+        margin: 0 auto;
     }
 
     /*=======HEADER TABLET STYLES======*/
@@ -943,7 +944,7 @@ body {
 .contacts {
     font-family: 'Roboto', sans-serif;
     color: #434455;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -965,6 +966,7 @@ body {
 
 .main-navigation {
     display: flex;
+    align-items: baseline;
 
 }
 
@@ -1143,12 +1145,19 @@ body {
 }
 
 .subscribe {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     gap:72px 24px;
 }
-
+.subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.subscribe-para {
+    text-align: left;
+}
 .paragraf-footer {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -1183,7 +1192,7 @@ body {
 }
 
 .container-footer-item {
-    text-align: left;
+    align-items: baseline;
 }
 
 .sosial-media-para {
@@ -1193,6 +1202,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    margin-top: 0;
     margin-bottom: 16px;
 }
 
@@ -1246,8 +1256,9 @@ body {
 @media screen and (min-width:1158px) {
     .container {
         max-width: 1158px;
-        padding-left: 156px;
-        padding-right: 156px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
         }
     .section {
         padding-top: 120px;
@@ -1311,9 +1322,9 @@ body {
     }
 }*/
 
-.solutions {
+/* .solutions {
     margin-bottom: 48px;
-}
+} */
 
 /*====OUR BENEFITS DESKTOP===*/
 .seconsary-menu {
@@ -1360,8 +1371,10 @@ body {
 
 /*====PORTFOLIO DESKTOP===*/
 .menu-portfolio {
+    display: flex;
     flex-wrap: wrap ;
-    gap: 48px 24px;
+    gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-item {
