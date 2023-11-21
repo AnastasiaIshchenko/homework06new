@@ -399,8 +399,9 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-top: 97.5px;
-    display: inline-block;
+    display: inline-flex;
     margin-bottom: 16px;
+    justify-items: center;
     text-align: center;
 }
 .paragraf-footer {
@@ -473,10 +474,10 @@ body {
 }
 
 .subscribe-button {
-    width: 165px;
+    min-width: 165px;
     height: 40px;
-    display: flex;
-    justify-content: center;
+    display: block;
+    justify-content:center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -489,6 +490,8 @@ body {
     border: 4px;
     border-radius: 4px;
     padding: 8px 24px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -846,9 +849,9 @@ body {
     .mobile-menu .address {
         display: flex;
     }
-        .mobile-contacts {
-            gap: 24px;
-        }
+    .mobile-contacts {
+        gap: 24px;
+    }
     .mobile-contacts li:first-child .contacts {
         color: #4d5ae5;
     }
@@ -973,7 +976,6 @@ body {
 }
 
 .header-container {
-
     justify-content: space-between;
 }
 .hero-section{
@@ -990,7 +992,7 @@ body {
     text-transform: uppercase;
     margin-right: 76px;
     margin-right: 120px;
-    padding: 17.5 0;
+    
 }
 
 .logo-span {
@@ -1037,10 +1039,15 @@ body {
 
 /*=======OUR TEAM TABLET STYLES======*/
 .menu-team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap:64px 24px;
+
 }
 .container-team {
     padding: 32px 0;
+    
 }
 .paragraf-team {
     color: #434455;
@@ -1066,12 +1073,12 @@ body {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
-    width: calc((100% - 24px) / 2);
 }
 
 /*======OUR PORTFOLIO TABLET STYLES======*/
 .menu-portfolio {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap:72px 24px;
     
@@ -1132,10 +1139,15 @@ body {
 
 .footer {
     background-color: #2E2F42;
-    gap:72px 24px;
-    width: 584px;
+
 }
 
+.subscribe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:72px 24px;
+}
 
 .paragraf-footer {
     font-family: 'Roboto', sans-serif;
@@ -1223,35 +1235,11 @@ body {
     background-color: #404bbf;
 }
 
-.footer-container {
-    gap: 72px 24px;
-    width: 584px;
-}
-
-.logo-footer {
-    display: inline-block;
-    text-align: left;
-}
-
-.footer-socials-wrap {
-    margin: initial;
-}
-
-.footer-socials {
-    text-align: left;
-}
-
-.footer-form {
-    gap: 24px;
-}
-
-.footer-form-text {
-    text-align-last: left;
-}
-
-.modal {
-    min-height: 584px;
-    width: 408px;
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:72px 24px;
 }
 }
 
@@ -1416,3 +1404,4 @@ screen and (min-resolution:2dppx),
 screen and (min-device-pixel-ratio:2) {
     
     }
+    
