@@ -19,6 +19,7 @@ ol {
 img {
     display: block;
     width: 100%;
+    height: auto;
 }
 
 .list {
@@ -40,8 +41,8 @@ body {
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 95px;
+    padding-bottom: 96px;
 }
 .container {
     padding-left: 15px;
@@ -51,6 +52,9 @@ body {
 
 
 /* =======HEADER MOBILE STYLES ======*/
+.header-container {
+    margin: 17px 0;
+}
 .menu {
     display: none;
 }
@@ -80,7 +84,7 @@ body {
 /*=======HERO MOBILE STYLES======*/
 .hero-section {
     background-color: #2E2F42;
-    padding: 188px 0;
+    padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     width: auto;
     background-repeat: no-repeat;
@@ -98,7 +102,8 @@ body {
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin: 72px 16px;
+    /* margin-left: 16px;
+    margin-right: 16px; */
     max-width: 288px;
 }
 .button {
@@ -134,8 +139,7 @@ body {
 /*=======OUR BENEFITS MOBILE STYLES======*/
 .our-benefits {
     background-color: #FFFFFF;
-    padding: 0;
-    margin-top: 95px;
+    padding:96px 0;
 }
 
 .visually-hidden {
@@ -154,14 +158,14 @@ body {
 .secondary-menu {
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap:72px;
 
 }
 
 .menu-item-benefits {
     align-items: center;
-    margin-bottom: 72px;
-    padding-bottom: 8px;
 }
 
 .menu-item-titel {
@@ -209,7 +213,9 @@ body {
     margin-bottom: 72px;
 }
 .menu-team {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 72px 0;
 }
 .menu-item-team {
     background-color: #FFFFFF;
@@ -232,8 +238,6 @@ body {
 
 .container-team {
     padding: 32px 0;
-    margin-bottom: 72px;
-
 }
 .paragraf-team {
     color: #434455;
@@ -373,6 +377,7 @@ body {
     padding-right: 16px;
     display: flex;
     flex-direction: column;
+    gap:72px;
 }
 /* .container-footer-item {
     margin:auto;
@@ -398,7 +403,7 @@ body {
     display: inline-flex;
     margin-bottom: 16px;
     justify-items: center;
-    text-align: center;
+    
 }
 .paragraf-footer {
     font-family: 'Roboto', sans-serif;
@@ -417,12 +422,12 @@ body {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     text-align: center;
-    margin-top: 72px;
     margin-bottom: 16px;
 }
 
 .icon-menu {
     display: flex;
+    justify-content: center;
     gap: 16px;
 }
 
@@ -452,7 +457,7 @@ body {
 }
 
 .footer-form-field-subscribe {
-    width: 100%;
+    width: 264px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -472,7 +477,7 @@ body {
 .subscribe-button {
     min-width: 165px;
     height: 40px;
-    display: block;
+    display: inline-flex;
     justify-content:center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
@@ -772,7 +777,7 @@ body {
             background-color: transparent;
             padding: 0;
             line-height: 0;
-            right: 8px;
+            right: 24px;
             top: 24px;
             width: 24px;
             height: 24px;
@@ -981,8 +986,7 @@ body {
     justify-content: space-between;
 }
 .hero-section{
-    padding-top: 112px;
-    padding-bottom: 112px;
+    padding: /*whick one*////
 }
 .logo {
     color: #4D5AE5;
@@ -1044,6 +1048,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap:64px 24px;
 
 }
@@ -1060,7 +1065,6 @@ body {
     letter-spacing: 0.02em;
     align-items: center;
     text-align: center;
-    padding-bottom: 8px;
 }
 
 .icon-menu-team {
@@ -1079,7 +1083,6 @@ body {
 
 /*======OUR PORTFOLIO TABLET STYLES======*/
 .menu-portfolio {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap:72px 24px;
@@ -1250,6 +1253,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap:72px 24px;
+    width:584px;
 }
 }
 
@@ -1261,8 +1265,8 @@ body {
         margin: 0 auto;
         }
     .section {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 95px;
+        padding-bottom: 96px;
     }
     /*=======HEADER DESKTOP STYLES====*/
 
@@ -1371,7 +1375,7 @@ body {
 
 /*====PORTFOLIO DESKTOP===*/
 .menu-portfolio {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap ;
     gap: 24px;
     row-gap: 48px;
@@ -1397,6 +1401,8 @@ body {
     padding-right: 15px;
     display: flex;
     align-items: baseline;
+    gap:0;
+    flex-wrap: nowrap;
 }
 .paragraf-footer {
     max-width: 264px;
@@ -1404,7 +1410,9 @@ body {
 .container-footer-item {
     margin-right: 120px;
 }
-
+.sosial-media-para {
+    justify-content: left;
+}
 }
 @media screen and (min-resolution:192dpi), screen and (min-resolution:2dppx), screen and (min-device-pixel-ratio:2) {
     .hero-section{
